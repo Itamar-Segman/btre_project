@@ -3,7 +3,7 @@
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-    <a class="navbar-brand" href="{% url 'index' %}">
+    <a class="navbar-brand" href="/">
         <img src="{% static 'img/logo.png' %}" class="logo" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
@@ -18,16 +18,16 @@
             class="nav-item mr-3"
             {% endif %}
         >
-            <a class="nav-link" href="{% url 'index' %}">Home</a>
+            <a class="nav-link" href="/">Home</a>
         </li>
-        <li 
+        <li
             {% if 'about' in request.path %}
             class="nav-item active mr-3"
             {% else %}
             class="nav-item mr-3"
             {% endif %}
         >
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-link" href="about">About</a>
         </li>
         <li class="nav-item mr-3">
             <a class="nav-link" href="listings.html">Featured Listings</a>
