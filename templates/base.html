@@ -15,20 +15,20 @@
     <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
 </head>
 <body>
-    <!-- Top Bar -->
-    {% include 'partials/_topbar.html' %}
-    <!-- NavBar -->
-    {% include 'partials/_navbar.html' %}
+<!-- Top Bar -->
+{% include 'partials/_topbar.html' %}
+<!-- NavBar -->
+{% include 'partials/_navbar.html' %}
 
-    {% block content %}
+{% block content %}
 
-    {% endblock %}
-    <!-- Footer -->
-    {% include 'partials/_footer.html' %}
-    
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/lightbox.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+<!-- Footer -->
+{% include 'partials/_footer.html' %}
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/lightbox.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
