@@ -2,11 +2,19 @@ from django.shortcuts import render, redirect
 
 
 def login(request):
-    return render(request, 'accounts/login.html')
+    if request.method == 'POST':
+        # Login User
+        pass
+    else:
+        return render(request, 'accounts/login.html')
 
 
 def register(request):
-    return render(request, 'accounts/register.html')
+    if request.method == 'POST':
+        # Register User
+        pass
+    else:
+        return render(request, 'accounts/Register.html')
 
 
 def logout(request):
